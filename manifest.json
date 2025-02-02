@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Music Controller Pro",
+  "version": "1.1",
+  "description": "Control music playback across YouTube Music and Spotify",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications",
+    "*://*.youtube.com/*",
+    "*://music.youtube.com/*",
+    "*://*.spotify.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "commands": {
+    "toggle-play": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space"
+      },
+      "description": "Toggle Play/Pause"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
