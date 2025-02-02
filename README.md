@@ -25,8 +25,8 @@ A browser extension that lets you control music playback across YouTube Music, Y
    ```
    chrome://extensions/
    ```
-4. Enable "Developer mode" in the top right
-5. Click "Load unpacked" and select the `chrome` folder from the extracted files
+4. Enable `Developer mode` in the top right
+5. Click `Load unpacked` and select the `chrome` folder from the extracted files
 
 ### For Firefox Users
 1. Download the extension files from [here](https://github.com/Underemployed/music-controller-extension/archive/refs/heads/main.zip)
@@ -37,7 +37,7 @@ A browser extension that lets you control music playback across YouTube Music, Y
    ```
    about:debugging#/runtime/this-firefox
    ```
-4. Click "Load Temporary Add-on"
+4. Click `Load Temporary Add-on`
 5. Navigate to the extracted folder and select `manfiest.json` file from the `firefox` folder
 
 ## Usage
