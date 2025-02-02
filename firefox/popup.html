@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <span class="material-icons">music_note</span>
+        <h3>Music Controller</h3>
+    </div>
+
+    <div class="services-list">
+        <div class="service-item">
+            <span>YouTube Music</span>
+            <label class="toggle">
+                <input type="checkbox" id="ytmusic-toggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="service-item">
+            <span>Spotify</span>
+            <label class="toggle">
+                <input type="checkbox" id="spotify-toggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="service-item">
+            <span>YouTube</span>
+            <label class="toggle">
+                <input type="checkbox" id="youtube-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+    </div>
+
+    <div class="shortcut-display">
+        <span class="material-icons">keyboard</span>
+        <span>Play/Pause: Ctrl+Shift+Space</span>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
