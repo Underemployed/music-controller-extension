@@ -38,7 +38,7 @@ A browser extension that lets you control music playback across YouTube Music, Y
    about:debugging#/runtime/this-firefox
    ```
 4. Click "Load Temporary Add-on"
-5. Navigate to the extracted folder and select any file from the `firefox` folder
+5. Navigate to the extracted folder and select `manfiest.json` file from the `firefox` folder
 
 ## Usage
 
