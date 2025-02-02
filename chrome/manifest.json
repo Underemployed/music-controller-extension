@@ -26,8 +26,7 @@
     "type": "module"
   },
   "icons": {
-    "16": "icon.ico",
-    "48": "icon.ico",
-    "128": "icon.ico"
+    "48": "48x48.png",
+    "128": "128x128.png"
   }
 }

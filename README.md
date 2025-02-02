@@ -17,7 +17,7 @@ A browser extension that lets you control music playback across YouTube Music, Y
 ## Installation
 
 ### For Chrome Users
-1. Download the extension files from [here](https://github.com/Underemployed/music-controller-extension/archive/refs/heads/main.zip)
+1. Download the extension files from [here](chrome.zip)
 2. Extract the downloaded zip file
 3. Open Chrome and go to:
    <br>
@@ -28,8 +28,9 @@ A browser extension that lets you control music playback across YouTube Music, Y
 4. Enable `Developer mode` in the top right
 5. Click `Load unpacked` and select the `chrome` folder from the extracted files
 
-### For Firefox Users
-1. Download the extension files from [here](https://github.com/Underemployed/music-controller-extension/archive/refs/heads/main.zip)
+### For Firefox Users: *Disclaimer:This is temporary until Firefox adds support for the extension*
+
+1. Download the extension files from [here](firefox.zip)
 2. Extract the downloaded zip file
 3. Open Firefox and go to:
    <br>
@@ -56,10 +57,12 @@ A browser extension that lets you control music playback across YouTube Music, Y
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Underemployed/music-controller-extension/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 
 ## Disclaimer
+
+Firefox doesnt allow temp extensions to be installed from the web, so I can't do anything bout firefox users.
 
 This tool was only written for the purpose of solving my own personal requirements.
 

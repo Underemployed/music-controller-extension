@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Music Controller Pro",
   "version": "1.1",
-  "description": "Control music playback across YouTube Music, YouTube and Spotify",
+  "description": "Control music playback across YouTube Music, YouTube and Spotify using a shortcut",
   "permissions": [
     "tabs",
     "storage",
@@ -13,8 +13,8 @@
 "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-        "64": "icon.ico",
-        "128": "icon.ico"
+        "48": "48x48.png",
+        "128": "128x128.png"
     }
 },
   "commands": {
@@ -29,8 +29,7 @@
     "scripts": ["background.js"]
   },
   "icons": {
-    "16": "icon.ico",
-    "48": "icon.ico",
-    "128": "icon.ico"
+    "48": "48x48.png",
+    "128": "128x128.png"
   }
 }
