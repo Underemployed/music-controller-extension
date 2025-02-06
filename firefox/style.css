@@ -1,79 +1,146 @@
-* {
+/* Base styles */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 350px;
+    background-color: #0a0a0a;
+    color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    width: max-content;
-    background: #181818;
-    color: #ffffff;
-    padding: 16px;
-}
-
+/* Header styles */
 .header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    background-color: #181818;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.header h3 {
-    font-size: 20px;
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 18px;
     font-weight: 500;
-    color: #fff;
-    margin-left: 8px;
 }
 
-
-
-
-
-
-
-
-.shortcut-display {
-    background: #282828;
-    padding: 12px 16px;
-    border-radius: 8px;
+/* Service toggle controls */
+.service-toggles {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
     gap: 8px;
 }
 
-.shortcut-display span {
-    font-size: 14px;
-    color: #aaaaaa;
+.control-button {
+    flex: 1;
+    background: #181818;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: #909090;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.material-icons {
-    font-size: 18px;
+.control-button.active {
+    background: #181818;
+    color: #ff2424;
+}
+
+.control-button:hover {
+    background: #252525;
+}
+
+.control-button.active:hover {
+    background: #252525;
+}
+
+.control-button .material-icons {
+    font-size: 24px;
+}
+
+/* YouTube/YTMusic specific controls */
+.youtube-theme .control-button.active,
+.ytmusic-theme .control-button.active {
     color: #ff0000;
 }
 
-
-.services-list {
-    margin: 20px 0;
+/* Spotify specific controls */
+.spotify-theme .control-button.active {
+    color: #1DB954;
 }
 
-.service-item {
+/* Tabs container */
+#tabs-container {
+    padding: 0 16px 16px;
+}
+
+/* Service cards */
+.service-card {
+    background: #181818;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    gap: 12px;
+}
+
+.service-header h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Tab list styles */
+.tabs-list {
+    padding: 8px 0;
+}
+
+.tab-toggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
-    background: #282828;
-    border-radius: 8px;
-    margin-bottom: 8px;
+    transition: background 0.2s ease;
 }
 
-.toggle {
+.tab-toggle:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-toggle span {
+    font-size: 13px;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Switch toggle styles */
+.switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 24px;
+    flex-shrink: 0;
+    width: 36px;
+    height: 20px;
+    margin-left: 12px;
 }
 
-.toggle input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -87,8 +154,8 @@ body {
     right: 0;
     bottom: 0;
     background-color: #404040;
-    transition: .4s;
-    border-radius: 24px;
+    transition: .2s;
+    border-radius: 34px;
 }
 
 .slider:before {
@@ -96,17 +163,55 @@ body {
     content: "";
     height: 16px;
     width: 16px;
-    left: 4px;
-    bottom: 4px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
-    transition: .4s;
+    transition: .2s;
     border-radius: 50%;
 }
 
 input:checked+.slider {
-    background-color: #a60202;
+    background-color: #ff0000;
 }
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(16px);
+}
+
+/* Service theme colors */
+.ytmusic-theme .service-header {
+    border-left: 4px solid #ff0000;
+}
+
+.youtube-theme .service-header {
+    border-left: 4px solid #ff0000;
+}
+
+.spotify-theme .service-header {
+    border-left: 4px solid #1DB954;
+}
+
+.spotify-theme input:checked+.slider {
+    background-color: #1DB954;
+}
+
+.tabs-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tabs-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tabs-list::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+}
+
+.tabs-list::-webkit-scrollbar-thumb:hover {
+    background: #505050;
+}
+
+.red{
+    color: #ff2424;
 }

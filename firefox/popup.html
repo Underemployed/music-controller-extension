@@ -2,48 +2,60 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Music Controller</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="header">
-        <span class="material-icons">music_note</span>
-        <h3>Music Controller</h3>
-    </div>
-
-    <div class="services-list">
-        <div class="service-item">
-            <span>YouTube Music</span>
-            <label class="toggle">
-                <input type="checkbox" id="ytmusic-toggle" checked>
-                <span class="slider"></span>
-            </label>
+        <div class="header-content">
+            <span class="material-icons red" >music_note</span>
+            <h1>Music Controller</h1>
         </div>
-        <div class="service-item">
-            <span>Spotify</span>
-            <label class="toggle">
-                <input type="checkbox" id="spotify-toggle" checked>
-                <span class="slider"></span>
-            </label>
-        </div>
-
-        <div class="service-item">
-            <span>YouTube</span>
-            <label class="toggle">
-                <input type="checkbox" id="youtube-toggle">
-                <span class="slider"></span>
-            </label>
-        </div>
-
     </div>
-
-    <div class="shortcut-display">
-        <span class="material-icons">keyboard</span>
-        <span>Play/Pause: Ctrl+Shift+Space</span>
+    <div class="service-toggles">
+        <button class="control-button ytmusic" id="ytmusic-toggle">
+            <span class="material-icons">music_note</span>
+            <span class="button-text">YT Music</span>
+        </button>
+        <button class="control-button youtube" id="youtube-toggle">
+            <span class="material-icons">play_circle</span>
+            <span class="button-text">YouTube</span>
+        </button>
+        <button class="control-button spotify" id="spotify-toggle">
+            <span class="material-icons">library_music</span>
+            <span class="button-text">Spotify</span>
+        </button>
     </div>
-
+    <div id="tabs-container">
+        <div class="service-card ytmusic-theme">
+            <div class="service-header">
+                <span class="material-icons">music_note</span>
+                <h4>YouTube Music Tabs</h4>
+            </div>
+            <div id="ytmusic-tabs" class="tabs-list"></div>
+        </div>
+        <div class="service-card youtube-theme">
+            <div class="service-header">
+                <span class="material-icons">play_circle</span>
+                <h4>YouTube Tabs</h4>
+            </div>
+            <div id="youtube-tabs" class="tabs-list"></div>
+        </div>
+        <div class="service-card spotify-theme">
+            <div class="service-header">
+                <span class="material-icons">library_music</span>
+                <h4>Spotify Tabs</h4>
+            </div>
+            <div id="spotify-tabs" class="tabs-list"></div>
+        </div>
+    </div>
+    <div class="service-header">
+        <h4>Alt+P: Play/Pause</h4> <hr>
+        <h4>Alt+M: Mute</h4>
+    </div>
     <script src="popup.js"></script>
 </body>
 
